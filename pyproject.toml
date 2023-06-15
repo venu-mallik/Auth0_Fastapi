@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Test API"
+authors = ["Venu Mallik"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+fastapi = "^0.96.0"
+SQLAlchemy = "^2.0.15"
+bcrypt = "^4.0.1"
+auth0-python = "^4.2.0"
+uvicorn = "^0.22.0"
+pydantic = {extras = ["all"], version = "^1.10.9"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.6"
+pyjwt = "^2.7.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
